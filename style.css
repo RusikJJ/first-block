@@ -1,17 +1,14 @@
 body {
     background-color: #f8f8f8;
-    width: 320px;
-    height: 597px;
     margin: 0px;
     font-family: "TT Lakes", sans-serif;
 }
-header {
+.header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
     background-color: #ffffff;
-    width: 320px;
     height: 88px;
     font-size: 28px;
     border-bottom: 1px solid #D9FFF5;
@@ -26,23 +23,23 @@ header {
 
 .logo {
     width: 96.55px;
-    height: 50.81px;
+    height: 50.81px; 
     padding-top: 18.59px;
-    padding-left: 16.73px;  
+    padding-left: 16.73px;
 }
 
 .element1 {
     width: 2px;
     height: 32px;
     padding-top: 28px;
-    padding-left: 16.73;
+    padding-left: 16.73; 
 }
 
 .setting {
     width: 40px;
     height: 40px;
     padding-top: 24px;
-    padding-left: 20px;  
+    padding-left: 20px;
 }
 
 .search {
@@ -50,6 +47,21 @@ header {
     height: 40px;
     padding-top: 24px;
     padding-left: 16;
+}
+.call {
+    display: none; 
+}
+
+.chat {
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    display: none;
 }
 
 h1 {
@@ -63,23 +75,14 @@ h1 {
    
 }
 
-
-.element3 {
-   width: 320px;
-   height: 176px;
-   background-image: url('img/MG3223.jpg');
-}
-
 section {
-    display: flex;
-    flex-direction: row;
-    font-size: 16px;
-    text-align: left;
     vertical-align: top;
     color: #7e7e82;
     white-space: nowrap;
     font-size: 16px;
+    overflow: scroll;
 }
+
 
 .text { 
     margin: 16px;
@@ -88,6 +91,10 @@ section {
     letter-spacing: 0.2px;
     color: #1b1c21;
 
+}
+
+.text2 {
+    display: none;
 }
 
 a {
@@ -106,24 +113,24 @@ a {
 .product__list > li {
     height: 40px;
     width: 246px;
-    margin: 0px 0px 0px 16px;
+    margin: 0px 0px 0px 24px;
 }
 .product__list > li > div {
-    padding: 12px 0px;
     text-align: center;
     font-family: 'TT Lakes';
-    font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
-    padding: 12px 0px;
-    text-align: center;
+    padding: 8px 0px;
 }
+
 .first_product{
     border: 2px solid #B8FFEC;
     background-color: #ffffff;
-    padding: 6px 0px !important;
+    padding: 8px 9.38px 8px 16.67px !important;
     border-radius: 6px;
 }
+
+
 
 .read_next {
     display: flex;
@@ -154,4 +161,126 @@ a {
      align-items: center;
      height: 40px;
      margin: 24px 0px 0px 0px;
+}
+
+.element2 {
+    display: none;
+}
+
+.element4 {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+
+
+    .burger {
+      order: -2;
+      padding-top: 24px;
+      padding-left: 24px;   
+    }
+    
+    .element1 {
+      order: -1;
+      padding-left: 20px;  
+    }
+    
+    .logo {
+     padding-left: 20.73px;
+     padding-top: 18.59px;   
+    }
+    
+    .call {
+        display: block;
+        width: 40px;
+        height: 40px;
+        padding-top: 24px;
+        padding-left: 250.73px;
+        
+    }
+    
+    .chat {
+        display: block;
+        width: 40px;
+        height: 40px;
+        padding-left: 16px;
+        padding-top: 24px;
+    }
+
+    .profile {
+        display: block;
+        width: 40px;
+        height: 40px;
+        padding-left: 16px;
+        padding-top: 24px;
+    }
+
+    .element2 {
+        display: block;
+        width: 2px;
+        height: 32px; 
+        padding-left: 20px;
+        padding-top: 28px;
+    }
+
+    .setting {
+        float: right;
+        padding-left: 20px; 
+        order: 4; 
+    }
+
+    .search {
+        order: 5;;
+        padding-left: 16px;
+    }
+    
+    p {
+        display: flex;
+        flex-direction: row;
+        margin-right: 0px;
+    }
+    .text {
+
+        margin-left:  24px;
+        width: 312px;
+        line-height: 20px;
+
+    }
+
+    .text2 {
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: #1b1c21;
+        width: 312px;
+        margin-left: 24px;
+    }
+
+    .info {
+      margin: 0px;
+      width: 336px;
+    }
+
+    .info2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    .read_next {
+        margin: 0px 16px 16px 33px
+    }
+
+    .element4 {
+       margin-top: 20px;
+       margin-left: 48px; 
+       margin-right: 25px;
+
+    }
+
+    .cps {
+        border-radius: 5px;
+    }
 }
