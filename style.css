@@ -110,11 +110,21 @@ a {
     flex-direction: row;
     padding: 0px;
 }
+
+
+.product__list:first-child{
+    margin-left: 16px;
+    width: 246px;
+    height: 40px;
+}
+
+
 .product__list > li {
     height: 40px;
     width: 246px;
-    margin: 0px 0px 0px 24px;
+    margin-right: 19.56px;
 }
+
 .product__list > li > div {
     text-align: center;
     font-family: 'TT Lakes';
@@ -126,8 +136,9 @@ a {
 .first_product{
     border: 2px solid #B8FFEC;
     background-color: #ffffff;
-    padding: 8px 9.38px 8px 16.67px !important;
+    padding: 6px 11px 6px 11px !important;
     border-radius: 6px;
+    width: 220.16px;
 }
 
 
@@ -177,6 +188,10 @@ a {
 
 .icons {
     display: none;
+}
+
+.addition {
+    margin-left: 0px;
 }
 
 @media (min-width: 768px) {
@@ -297,6 +312,14 @@ a {
     .reviews {
         display: none;
     }
+
+    .brand {
+        display: none;
+    }
+
+    .address {
+        display: none;
+    }
 }
 
 @media (min-width: 1120px) {
@@ -368,5 +391,13 @@ a {
 
     .cps {
         border-radius: 6px;
+    }
+
+    .brand {
+        display: block;
+    }
+
+    .address {
+        display: block;
     }
 }
