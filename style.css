@@ -149,7 +149,7 @@ a {
 
 .further {
     margin: 0 0 0 8px;
-    font-family: "TT Lakes", sans-serif ;
+    font-family: "TT Lakes", sans-serif;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
@@ -169,6 +169,14 @@ a {
 
 .element4 {
     width: 100%;
+}
+
+.reviews {
+    display: none;
+}
+
+.icons {
+    display: none;
 }
 
 @media (min-width: 768px) {
@@ -255,6 +263,8 @@ a {
         color: #1b1c21;
         width: 312px;
         margin-left: 24px;
+        height: 40px;
+        overflow: hidden;
     }
 
     .info {
@@ -270,7 +280,7 @@ a {
     }
 
     .read_next {
-        margin: 0px 16px 16px 33px
+        margin: 0px 16px 16px 33px;
     }
 
     .element4 {
@@ -282,5 +292,81 @@ a {
 
     .cps {
         border-radius: 5px;
+    }
+
+    .reviews {
+        display: none;
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .header {
+        display: none;
+    }
+
+    .text2 {
+        overflow: visible;
+        width: 490px;
+    }
+
+    .text {
+        width: 490px;
+    }
+
+    .info {
+        width: 490px;
+    }
+
+    .read_next {
+        margin: 50px 16px 16px 23px;
+    }
+
+    .addition {
+        display: none;
+    }
+
+    .reviews {
+        display: block;
+        flex-wrap: wrap;
+    }
+    
+    .li:first-child {
+        margin: 0px 0px 0px 24px;
+        width: 246px;
+    }
+   
+    .element4 {
+        width: 100%;
+    }
+
+    .icons {
+        display: none;
+        display: flex;
+        margin-left: 450px;
+    }
+
+    .services {
+        margin: 40px 0px 0px 0px;
+    }
+
+    .application {
+        margin-right: 8px;
+    }
+   
+    .repair {
+        width: 119px;
+        align-items: center;
+        margin: 0px 9px 0px 32px;
+    }
+
+    h1 {
+        width: 233px;
+        margin-right: 0px;
+
+    }
+
+    .cps {
+        border-radius: 6px;
     }
 }
